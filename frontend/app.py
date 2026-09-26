@@ -48,7 +48,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # API configuration
-API_BASE_URL = "http://localhost:8000"
+import os
+API_BASE_URL = os.environ.get("API_URL", "http://localhost:8000")
 
 # Session state initialization
 if 'session_id' not in st.session_state:

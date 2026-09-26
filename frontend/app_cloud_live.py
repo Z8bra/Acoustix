@@ -4,6 +4,7 @@ import pandas as pd
 import plotly.express as px
 from datetime import datetime
 import time
+import os
 
 # Page configuration
 st.set_page_config(
@@ -12,6 +13,9 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
+
+# Configure for Railway deployment
+port = int(os.environ.get("PORT", 8501))
 
 # Custom CSS for better styling
 st.markdown("""
