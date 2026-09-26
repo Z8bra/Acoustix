@@ -1,0 +1,11 @@
+fastapi==0.104.1
+uvicorn==0.24.0
+streamlit==1.28.1
+librosa==0.10.1
+numpy==1.24.3
+pyaudio==0.2.13
+soundfile==0.12.1
+scipy==1.11.4
+pydub==0.25.1
+python-multipart==0.0.6
+websockets==12.0
