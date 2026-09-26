@@ -4,8 +4,8 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "python backend/app.py",
-    "healthcheckPath": "/health",
+    "startCommand": "streamlit run frontend/app_direct_input.py --server.port=$PORT --server.address=0.0.0.0",
+    "healthcheckPath": "/",
     "healthcheckTimeout": 100,
     "restartPolicyType": "ON_FAILURE"
   }
